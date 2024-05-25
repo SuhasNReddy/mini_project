@@ -1,0 +1,550 @@
+
+        *{
+            margin: 0;
+            padding: 0;
+            color: aliceblue;
+            font-family: 'Times New Roman', Times, serif;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url("https://4kwallpapers.com/images/wallpapers/windows-10-microsoft-windows-colorful-black-background-2048x1536-1552.jpg");
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: right;
+            
+            background-color: #0A0A0A;
+            backdrop-filter: brightness(0.5);
+        }
+        .navbar{
+            /* border: 1px solid red; */
+            display: flex;
+            padding: 15px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            position: relative;
+            /* position: sticky; */
+            /* top: 0; */
+        }
+        .image{
+            width: 80px;
+            height: auto;
+            /* margin-left: 50px; */
+        }
+        .navbar ul{
+            display: flex;
+        }
+        .navbar ul li{
+            list-style: none;
+            display: flex;
+        }
+        .navbar ul li a{
+            
+            /* padding: 8px; */
+            margin: 10px 20px;
+            /* padding-bottom: 5px; */
+            text-decoration: none;
+            color: white;
+            font-size: 1.4rem;
+            position: relative;
+        }
+
+        .navbar ul li a::before{
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 0;
+            border-bottom: 3px solid #A3F8FF ;
+            border-radius: 2px;
+            left: 0;
+            top: 0;
+            transition: width 1s;
+        }
+
+        .navbar ul li a:hover:before{
+            width: 100%;
+        }
+         #scrollUpBtn {
+        display: none; /* Hide the button by default */
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px;
+        font-size: 16px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        }
+
+        .Home{
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            padding: 10px 8%;
+            
+        }
+        .my-text{
+            position: absolute;
+            top: 65%;
+
+            font-size: 2rem;
+            transform: translateY(-50%);
+
+        }
+        .dynamic{
+            color: #A3F8FF;
+            position: relative;
+
+        }
+        .dynamic::before{
+            content: "";
+            border-left: 2px solid #A3F8FF;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(0 0 0);
+            left: 0;
+            animation: typing 2s  steps(10) infinite;
+        }
+        @keyframes typing {
+            50%{
+                left: 100%;
+            }100%{
+                left: 0;
+            }
+        }
+        .my-text > *{
+            margin:15px 0;
+        }
+        .aboutme{
+            width: 100%;
+            height: fit-content;
+            padding: 80px 15%;
+            display: flex;
+            justify-content: center;
+            font-size: 1.1rem;
+            align-items: center;
+            /* border: 1px solid white; */
+        }
+        .aboutme .box{
+            
+            width: 100%;
+            height: 100%;
+            /* border: 1px solid white; */
+            display: flex;
+            justify-content: center;
+            min-width: 350px;
+            align-items: center;
+            flex-wrap: wrap;
+            
+        }
+        .aboutme .box .box1{
+            width: 45%;
+            height: auto;
+            padding: 2%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(15, 15, 15,0.5);
+        }
+        .aboutme .box .box2{
+            width: 50%;
+            padding: 4%;
+            margin: 2%;
+            height: fit-content;
+            min-width: 300px;
+            background-color: rgba(10, 10, 10,0.85);
+        }
+        .elinks{
+            display: flex;
+        }
+        .elinks > *{
+            margin: 4% 8%;
+            position: relative;
+            cursor: pointer;
+            padding-bottom: 3px;
+        }
+
+        .elinks > *::before{
+            content: "";
+            width: 0%;
+            border-bottom:3px solid #A3F8FF ;
+            position: absolute;
+            height: 100%;
+            transition: 0.5s;
+        }
+
+        .activeelink::before{
+            width: 50%;
+        }.allskills ul li{
+            padding: 4px 0;
+        }
+        .allskills ul li span{
+            padding: 3px 0;
+            color:#A3F8FF ;
+        }
+
+        .myimage2{
+            width: 100%;
+            height: auto;
+        }
+
+        /* Services */
+        .services{
+            width: 100%;
+            height: auto;
+            padding: 50px 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .services .container{
+            
+            padding: 2%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .services .service{
+            width: 300px;
+            height: 200px;
+            padding: 10px;
+            text-align: center;
+            background-color:  rgba(81, 81, 81, 0.85);
+            border-radius: 10px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            transition: transform 0.5s;
+            
+        }
+        .services .service .somelogo{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            color: #A3F8FF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .service .somelogo i{
+            color: #A3F8FF;
+            
+
+        }
+        .services .service:hover{
+            box-shadow: 1px 2px 20px rgba(100, 100, 100, 0.9);
+            transform: translateY(-7px);
+        }
+
+        .services .service:hover .somelogo{
+            background-color: #A3F8FF;
+        }
+        .services .service:hover .somelogo i{
+            color: black;
+        }
+        .service h4{
+            font-size: 1.1rem;
+            padding: 4px;
+        }
+        .services >p{
+            font-size: 2rem;
+            padding: 8px;
+            font-style: normal;
+            color: #A3F8FF;
+        }
+
+        /* projrcts */
+        .myprojects{
+            padding: 50px 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .myprojects > p{
+            font-size: 2rem;
+            padding: 8px;
+            font-style: normal;
+            color: #A3F8FF;
+        }
+
+        .myprojects .projectcon{
+            padding: 2%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .myprojects .projectcon .project{
+            position: relative;
+            width: 450px;
+            height: 500px;
+            
+            text-align: center;
+            background-color:  rgba(81, 81, 81, 0.85);
+            border-radius: 10px;
+            margin: 10px;
+            display: flex;
+            overflow: hidden;
+            justify-content: center;
+            transition: transform 1s;
+        }
+        .project img{
+            width: 100%;
+            
+        }
+
+        .project .somedescription{
+            position: absolute;
+            bottom: 0;
+            right: -100%;
+            width: 100%;
+            overflow: hidden;
+            height: 100%;
+            background: linear-gradient(to right,#A3F8FF ,transparent);
+            
+            transition: all 0.5s;
+            
+        }
+        .project:hover{
+            transform: translateY(-8px);
+        }
+        .project:hover .somedescription{
+            padding: 10px;
+            right: 0;
+        }
+        .project .somedescription p{
+            top: 10px;
+            font-size: 1.3rem;            
+            transition: all 0.5s;
+            transition-delay: 0.5s;
+            transform: translateX(-100%);
+            color: black;
+            
+            
+        }
+        .project:hover .somedescription p{
+            transform: translateX(0%);
+        }
+        .project .somedescription .projecttitle{
+            color: #A3F8FF ;
+            font-size: 2rem;
+            margin-bottom: 5px;
+        }
+
+        /* Contact */
+        .contactme{
+            padding: 50px 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .contactme > p{
+            font-size: 2rem;
+            padding: 8px;
+            font-style: normal;
+            color: #A3F8FF;
+        }
+
+        .contactme .contactcon{
+            padding: 2%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .contactme .contactcon > div{
+            position: relative;
+            width: 450px;
+            
+            
+            background-color:  transparent;
+            border-radius: 10px;
+            margin: 10px;
+            
+        }
+        .contactme .contactcon i{
+            color:#A3F8FF;
+        }
+        .contactme .contactcon .contact1{
+            height: auto;
+            width: 250px;
+            padding: 0 2% ;
+        }
+        .contactme .contactcon .contact1>*{
+            padding: 5px;
+            margin: 10px;
+        }
+        .contact1 .allicons{
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+        .allicons >div{
+            width: 30px;
+            height: 30px;
+            /* background-color: #A3F8FF; */
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.5s;
+        }
+        .allicons > div:hover{
+            background-color: #A3F8FF;
+            transform: translateY(-5px);
+        }
+        .allicons > div:hover i{
+            color: black;
+        }
+        .contact1 i{
+            font-size: 20px;
+            margin: 5px;
+        }
+        .contact1 span{
+            padding: 0 4px ;
+            font-size: 1.1rem;
+        }
+
+        .contact2{
+            padding: 4%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: fit-content;
+        }
+
+        .contact2details 
+        {
+            position: relative;
+            padding: 0 0;
+            margin: 25px 0;
+            display: flex;
+            width: 100%;
+
+        }
+
+        .contact2details label{
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #A3F8FF;
+            transition: all 0.5s;
+
+        }
+        .contact2details input,.contact2details textarea{
+            background: transparent;
+            outline: none;
+            width: 100%;
+            border: none;
+            padding-bottom:3px ;
+            border-bottom: 1px solid #A3F8FF;
+            
+        }
+
+        .contact2details input:focus +label,.contact2details input:not(:placeholder-shown) +label,.contact2details textarea:focus +label,.contact2details textarea:not(:placeholder-shown) +label{
+            top: -15px;
+            background: transparent;
+        }
+        
+        
+        .submitbtn button{
+         background: transparent;
+         border: none;
+         font-size: 1.2rem;
+         border: 1px solid #A3F8FF;
+         padding: 5px 20px;
+         border-radius:20px;
+         color: #A3F8FF;
+         transition: transform 0.5s;
+        }
+        .submitbtn button:hover{
+            cursor: pointer;
+            transform: translateY(-5px);
+            color: white;
+            background-color: #A3F8FF;
+        }
+
+        .static-content{
+            display: none;
+        }
+
+        @media only screen and (min-width:500px) and (max-width: 800px) {
+            .navbar h2{
+                display: none;
+            }
+            .navbar{
+                justify-content: center;
+            }
+        }
+        
+        @media only screen  and (max-width: 500px) {
+            .navbar h2{
+                display: none;
+            }
+            .navbar{
+                display: block;
+            }
+            .navbar ul{
+                display: block;
+            }
+            .dynamic{
+                display: none;
+            }
+            .static-content{
+                display: inline;
+            }
+            
+            .Home,.aboutme{
+                padding: 0 4%;
+            }
+            .aboutme .box .box2,.aboutme .box{
+                width: 100%;
+                min-width: 0;
+            }
+            .closebtn{
+                display: flex !important;
+                /* height: 100%; */
+                width: fit-content;
+                position: absolute;
+                top: 15px;
+                right: 15px;
+            }
+            .closebtn a::before{
+                display: none;
+            }
+
+            .navbar ul li:nth-child(2),.navbar ul li:nth-child(3),.navbar ul li:nth-child(4){
+                display: none;
+            }
+
+        }
+
+        @media only screen  and (max-width: 500px){
+            .myprojects{
+                padding: 5px 8%;
+            }
+            .myprojects .projectcon .project{
+                height: 260px;
+            }
+            .projectcon .project .somedescription{
+                overflow: auto;
+            }
+        }
+
+        .commonerror{
+            padding: 5px;
+            font-size: 1.1rem;
+            
+        }
+
+        
